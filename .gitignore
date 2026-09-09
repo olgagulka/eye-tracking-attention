@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Jupyter and Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Local data and generated results
+data/*
+!data/README.md
+results/*
+!results/README.md
+
+# Temporary exports
+*.tmp
+*.log

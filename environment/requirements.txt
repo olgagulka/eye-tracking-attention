@@ -1,0 +1,9 @@
+jupyter
+matplotlib
+numpy
+opencv-python
+pandas
+PsychoPy
+pymediainfo
+rpy2
+scipy

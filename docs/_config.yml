@@ -1,0 +1,9 @@
+title: Eye-tracking synchrony and episodic memory
+description: Processing and analysis documentation for two movie-encoding recognition-memory studies
+theme: minima
+repository: olgagulka/eye-tracking-attention-
+header_pages:
+  - study-design.md
+  - eye-tracking-preprocessing.md
+  - synchrony-and-glmm.md
+  - reproducibility.md
