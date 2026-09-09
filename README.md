@@ -10,8 +10,8 @@ This repository accompanies a manuscript investigating whether inter-individual 
 | [`notebooks/analysis/synchrony_visualization.ipynb`](notebooks/analysis/synchrony_visualization.ipynb) | Segment-level correlations, synchrony measures, GLMMs, marginal effects, and visualizations | Included verbatim |
 | [`docs/`](docs/index.md) | Study design, processing workflow, statistical analysis, and reproducibility notes | Included |
 | [`environment/`](environment/README.md) | Python and R dependency information recoverable from the notebooks and manuscript | Included |
-| [`data/`](data/README.md) | Data-availability and expected-input documentation | Data not included |
-| [`results/`](results/README.md) | Expected generated outputs | Outputs not included |
+| [`data/`](data/README.md) | Data-availability and expected-input documentation | Data not yet included |
+
 
 ## Analysis workflow
 
