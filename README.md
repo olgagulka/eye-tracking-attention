@@ -35,4 +35,4 @@ The notebooks currently reference the original local directory structure and req
 
 ## Documentation website
 
-The GitHub Pages source is in [`docs/`](docs/index.md). If Pages is not already configured, select **Deploy from a branch**, choose the `main` branch and `/docs` folder in the repository's **Settings → Pages**.
+The GitHub Pages source is ready in [`docs/`](docs/index.md). To publish it, select **Deploy from a branch**, then choose the `main` branch and `/docs` folder in **Settings → Pages**. A private repository requires a GitHub plan that supports Pages for private repositories; otherwise the repository must first be made public.
