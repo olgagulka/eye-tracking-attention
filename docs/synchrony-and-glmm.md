@@ -67,4 +67,4 @@ YN trials are additionally modeled separately for:
 
 The notebook constructs condition-specific leave-one-out accuracy covariates, fits decomposed and non-decomposed GLMMs within each condition, and contains an interaction model testing whether the IGS association differs between signal-present and signal-absent trials. This separation is intended to distinguish a possible sensitivity benefit from a shift in response criterion.
 
-The manuscript also describes a signal-detection criterion (*C*) analysis and a 2 × 2 repeated-measures ANOVA across low/high IGS and GS categories. No corresponding criterion/ANOVA script was included among the supplied files.
+The manuscript also describes a signal-detection criterion (*C*) analysis and a 2 × 2 repeated-measures ANOVA across low/high IGS and GS categories. 

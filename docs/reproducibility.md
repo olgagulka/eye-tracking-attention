@@ -16,9 +16,9 @@ This repository deliberately does not rewrite hard-coded paths, correct explorat
 
 ## Runtime information
 
-The manuscript reports Python 3.12.7 and R 4.5.2 for the GLMM analysis. The synchrony notebook metadata also reports Python 3.12.7. The preprocessing notebook metadata reports Python 3.9.6, so the exact Python environment used for every preprocessing stage should be confirmed before a formal release. Exact versions of the imported Python and R packages were not included in the supplied materials.
+ Python 3.12.7 and R 4.5.2 were used for the GLMM analysis. 
 
-The notebooks use absolute paths from the original workstation. They will not run end-to-end on a new machine without recreating that directory structure or editing a working copy. The preserved notebook in this repository should remain unchanged if code-level provenance is required.
+The notebooks use absolute paths from the original workstation. They will not run end-to-end on a new machine without recreating that directory structure or editing a working copy. 
 
 ## Documentation/code points to confirm
 

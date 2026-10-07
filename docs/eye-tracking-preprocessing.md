@@ -5,14 +5,7 @@ title: Eye-tracking preprocessing
 
 The preprocessing record is preserved in [`preprocessing_Eyetracking.ipynb`](https://github.com/olgagulka/eye-tracking-attention-/blob/main/notebooks/preprocessing/preprocessing_Eyetracking.ipynb). The notebook contains multiple historical, current, and exploratory sections; the descriptions below identify the workflow reported in the research notes and the operations implemented in the notebook.
 
-## Version history represented in the notebook
 
-- The initial preprocessing section is labeled as applying to pilots 01–03.
-- The section titled **“the script version (May)”** is identified in the research notes as the version used for pilots 05 and 06.
-- The section titled **“script for all upcoming participants”** is identified as the workflow used from pilot 07 onward. It requires the recorded movie-start value (`start`) so that non-movie gaze samples can be removed.
-- A later section titled **“pre processing all upcoming participants – final version of the script (Oct, 2025)”** implements the same main alignment/cleaning operations with adjustable participant, movie, part, and start-time parameters.
-
-The research notes specifically identify the movie-start workflow for Sprout, Witness, and Prayer. The notebook also contains Guest-specific filenames and settings.
 
 ## Main gaze-preprocessing operations
 
@@ -39,9 +32,6 @@ The notebook also contains a padding procedure for cases in which eye tracking b
 
 Each movie was presented in two parts. The `merge_movie_parts` function reads the processed `run_01` and `run_02` files for one participant, adds a `movie_part` label to each, concatenates them, and saves one merged participant/movie file. These merged files are the inputs to the later movie-segment matching step.
 
-## Other material retained in the notebook
-
-The notebook also preserves code for fixation preprocessing, gaze-quality plots, timestamp checks, 60-Hz resampling experiments, demographic summaries, downsampling that is explicitly labeled as no longer used, and exploratory heatmap generation. These sections remain in place to preserve the original computational record; they are not all part of the main workflow described above.
 
 ## Behavioral preprocessing dependency
 

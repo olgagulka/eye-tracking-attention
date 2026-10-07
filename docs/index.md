@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-This research repository documents two experiments examining whether similarity in participants' eye movements while viewing narrative movies predicts later episodic-memory performance.
+This research repository documents two experiments examining whether similarity in participants' eye movements while viewing narrative movies predicts later recognition memory performance.
 
 ## What is documented
 
