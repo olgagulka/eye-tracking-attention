@@ -1,4 +1,4 @@
-# Eye-tracking synchrony and episodic memory
+# Eye-tracking: influence of attention on recognition memory
 
 This repository accompanies a manuscript investigating whether inter-individual eye-gaze synchrony during movie viewing predicts subsequent recognition-memory performance. The project contains
 
