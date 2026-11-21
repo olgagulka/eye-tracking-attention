@@ -13,7 +13,7 @@ Both studies used the same movies, eye-tracker, and **identical eye-tracking pre
 | --- | --- |
 | [`notebooks/preprocessing/preprocessing_Eyetracking.ipynb`](notebooks/preprocessing/preprocessing_Eyetracking.ipynb) | **Step 1.** Eye-tracking alignment to movie onset, trimming, blink handling, interpolation, and conversion to pixel coordinates (one participant × movie part per run) |
 | [`notebooks/preprocessing/match_movie_segments_to_eye_tracking.ipynb`](notebooks/preprocessing/match_movie_segments_to_eye_tracking.ipynb) | **Step 2.** Labelling gaze samples with the 3-second movie segments around each target frame, pairwise segment-level gaze correlations, and individual-to-group (IGS) and group (GS) synchrony |
-| [`notebooks/analysis/synchrony_visualization.ipynb`](notebooks/analysis/synchrony_visualization.ipynb) | **Step 3.** GLMMs, average marginal effects, and manuscript figures |
+| [`notebooks/analysis/fitting_models_and_main_figures.ipynb`](notebooks/analysis/fitting_models_and_main_figures.ipynb) | **Step 3.** GLMMs, average marginal effects, and manuscript figures |
 | [`results/IGS_GS_synchrony/`](results/) | IGS/GS values per participant and movie segment (output of Step 2), one CSV per movie |
 | [`docs/`](docs/index.md) | Study design, processing workflow, statistical analysis, and reproducibility notes |
 | [`environment/`](environment/README.md) | Python and R dependency information |
@@ -141,20 +141,10 @@ All of Step 1 and Step 2 is identical for the two studies. Only the participant 
 - `synchrony_visualization.ipynb` reads the `..._30_subjects_final.csv` file, i.e., the main-experiment data. To analyze the control study, point it to the control-study merged CSV and run only the 2AFC cells.
 - The IGS/GS files in `results/IGS_GS_synchrony/` come from the configuration saved in the Step 2 notebook.
 
-## Not yet included
-
-These steps are used in the workflow but their code is not in this repository yet:
-
-- merging the two movie parts, adding `movie_part` / `part_timestamp`, and gaze-quality control, which produces the `eye_tracking_filtered_qc` files read by Step 2;
-- the movie annotation files (`annotations_<movie>_movie.csv`) with the target-frame timestamps;
-- calculation of YN and 2AFC response times from the raw behavioral files;
-- merging IGS/GS with trial-level behavior and computing the leave-one-out group accuracy, which produces the input CSV of Step 3 (the notebook includes the code that creates the signal-absent file, but not its signal-present counterpart); and
-- the signal-detection criterion (*C*) and repeated-measures ANOVA analyses, if stored separately.
 
 ## Reuse
 
-The notebooks reference the original local directory structure, so paths must be edited before running them. Package names are listed in [`environment/`](environment/README.md), but exact package versions were not recoverable for every dependency. Gaze, behavioral, and movie-stimulus data are described in [`data/`](data/README.md). A license and formal citation file should be added once the authors have selected reuse terms and finalized the manuscript citation.
-
+The notebooks reference the original local directory structure, so paths must be edited before running them. Package names are listed in [`environment/`](environment/README.md). Gaze, behavioral, and movie-stimulus data are described in [`data/`](data/README.md).
 ## Documentation website
 
-The GitHub Pages source is ready in [`docs/`](docs/index.md). To publish it, select **Deploy from a branch**, then choose the `main` branch and `/docs` folder in **Settings → Pages**. A private repository requires a GitHub plan that supports Pages for private repositories; otherwise the repository must first be made public.
+
